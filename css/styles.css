@@ -185,28 +185,36 @@ body {
 /* ========HERO============*/
 .hero {
   background: var(--hero);
-  background-image: var(--dg-gradient), url(../images/fon/people-office.jpg);
+  background-image: var(--dg-gradient), url(../images/fon/people-office-mob.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
-  max-width: 1440px;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  max-width: 428px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--dg-gradient),
+      url(../images/fon/people-office-mob2x.jpg);
+  }
 }
 
 .hero-title {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--hero-title);
-  margin-bottom: 48px;
-  max-width: 496px;
+  margin-bottom: 72px;
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -248,29 +256,21 @@ body {
 }
 .features-text {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: var(--features-text);
 }
 .features-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(40 / 36);
   letter-spacing: 0.02em;
   color: var(--features-title);
   margin-bottom: 8px;
+  align-items: center;
 }
 .icon-box {
-  height: 112px;
-  background-color: var(--icon-box);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 8px;
-}
-.icon {
-  width: 64px;
-  height: 64px;
+  display: none;
 }
 /* ============doing========== */
 .doing {
