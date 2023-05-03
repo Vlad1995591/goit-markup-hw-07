@@ -267,30 +267,14 @@ body {
   letter-spacing: 0.02em;
   color: var(--features-title);
   margin-bottom: 8px;
-  align-items: center;
+  text-align: center;
 }
 .icon-box {
   display: none;
 }
 /* ============doing========== */
 .doing {
-  padding-bottom: 120px;
-}
-.doing-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--doing-title);
-  margin-bottom: 72px;
-}
-.doing-list {
-  display: flex;
-  gap: 24px;
-}
-.doing-item {
+  display: none;
 }
 
 /* ============time============== */
@@ -455,7 +439,6 @@ body {
 }
 .footer-logo-text {
   width: 264px;
-  margin-right: 120px;
 }
 .footer-social {
 }
